@@ -1,0 +1,6 @@
+-  repos:
+    repo: https://github.com/zersix225/image-compressor.git
+    rev: 1.0.0
+    hooks: 
+      id: autopep8
+
