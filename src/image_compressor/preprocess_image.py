@@ -27,12 +27,13 @@ class PreprocessImage(ReadAndSaveFile):
     def input_file(self, input_path):
         self.image = Image.open(input_path)
         self.file_name = os.path.splitext(os.path.basename(input_path))[0]
-        self.image.show()
+        # self.image.show()
 
-    def output_file(self, output_path="outputs"):
+    def output_file(self, output_path):
         output_folder = os.path.join(output_path, self.file_name)
         os.makedirs(output_folder, exist_ok=True)
 
         result = self.convert_grayscale()
         save_path = os.path.join(output_folder, "convert_gray.jpg")
         result.save(save_path)
+        return np.array(result)
