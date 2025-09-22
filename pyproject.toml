@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "", email = ""},
 ]
-dependencies = ["pip>=25.2", "autopep8>=2.3.2"]
+dependencies = ["pip>=25.2", "autopep8>=2.3.2", "numpy>=2.3.3", "imageio>=2.37.0", "pillow>=11.3.0"]
 requires-python = ">=3.13"
 readme = "README.md"
 license = {text = "MIT"}
@@ -17,3 +17,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.scripts]
+dev = "./src/main.py"
