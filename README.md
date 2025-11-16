@@ -1,8 +1,13 @@
 # image-compressor
-
+This project is made to compress images using SVD method.
 ## Commands
-The commands this project run
+To run the project:
 
 ```bash
   pdm run dev
+```
+To install packages:
+
+```bash
+  pdm install package
 ```
