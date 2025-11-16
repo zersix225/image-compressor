@@ -9,5 +9,6 @@ To run the project:
 To install packages:
 
 ```bash
-  pdm install package
+  pdm install
+
 ```
